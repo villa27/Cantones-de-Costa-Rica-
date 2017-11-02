@@ -35,7 +35,7 @@
       osm.addTo(mapa);
 	    			
 		function infocanton(feature, layer) {
-	var popupContent = "Nombre de Cantón: ";
+	var popupContent = "Cantones: ";
 	if (feature.properties && feature.properties.NCANTON) {
 	  popupContent += feature.properties.NCANTON;
 	}
@@ -53,7 +53,7 @@
 	  return L.circleMarker(latlng, {
 	    radius: 1,
 	    fillColor: "#006d2c",
-	    color: "#000",
+	    color: "#006d2c",
 	    weight: 1,
 	    opacity: 1,
 	    fillOpacity: 0.8
